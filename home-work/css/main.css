@@ -1,0 +1,149 @@
+body{
+    font-size: 16px;
+    font-family: "SF NS Display" , sans-serif;
+}
+.my-wrap{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    background: #f5f5f5;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 42px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 42px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 42px -5px rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow: auto;
+}
+.my-wrap label ,
+.my-wrap input{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+.my-wrap form{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+.my-wrap input{
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: none;
+    width: 90%;
+    margin: 10px auto;
+    border: none;
+    padding: 0 20px;
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    font-weight: 300;
+}
+.my-wrap input:-moz-placeholder{
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    font-weight: 300;
+}
+.my-wrap input::-moz-placeholder{
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    font-weight: 300;
+}
+.my-wrap input:-ms-input-placeholder{
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    font-weight: 300;
+}
+.my-wrap input::-webkit-input-placeholder{
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    font-weight: 300;
+}
+.my-wrap{
+    position: relative;
+}
+.my-wrap > div{
+    clear: both;
+}
+.my-wrap span{
+    margin: 5px 0 5px 40px;
+}
+.my-wrap input[type='radio']{
+    width: auto;
+    height: auto;
+    display: inline;
+}
+.my-wrap textarea{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 90px;
+    border: none;
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    resize: none;
+    font-weight: 300;
+}
+.my-wrap textarea:-moz-placeholder{
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    font-weight: 300;
+}
+.my-wrap textarea::-moz-placeholder{
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    font-weight: 300;
+}
+.my-wrap textarea:-ms-input-placeholder{
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    font-weight: 300;
+}
+.my-wrap textarea::-webkit-input-placeholder{
+    color: #000 !important;
+    font-size: 16px;
+    font-family: "SF NS Display Light" , sans-serif;
+    font-weight: 300;
+}
+.strong{
+    font-family: "SF NS Display Bold" , sans-serif;
+    font-weight: bold;
+}
+.my-wrap button{
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto;
+    font-family: "SF NS Display Bold" , sans-serif;
+    font-weight: bold;
+    border: 2px solid rgba(0 ,0, 0, .2);
+    color: red;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.my-wrap button:hover{
+    opacity: .7;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}

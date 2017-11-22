@@ -1,14 +1,121 @@
 
-
-
-img{
+#map{
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    padding: 50px 20px;
+}
+body{
+    background: #fcfcff;
+}
+#map img{
+    width: 120px;
+    position: relative;
+    z-index: -1;
+}
+#map .csmall{
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+#map .cmedium{
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+}
+#map .cbig{
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+}
+#map .bird{
+    width: 30px;
+    position: relative;
+    bottom: -30px;
+    position: relative;
+    z-index: 1;
+}
+#map .penis img{
+    width: 40px;
+}
+#my-foto img{
+    width: 400px;
+    height: auto;
     display: block;
     margin: 0 auto;
 }
-body{
+#my-foto{
+    width: 100%;
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+}
+.wrapper{
+    display: flex;
+    height: 500px;
+    border: 1px solid #000;
+    align-items: flex-end;
+    text-align: left;
+}
+.jump{
+    position: relative;
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+#text{
+    position: absolute;
+    top: 18%;
+    left: 0;
     text-align: center;
+    width: 100%;
+    font-size: 120px;
+}
+#finish-score{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+}
+#life_info{
+    position: absolute;
+    top: 15%;
+    left: 40px;
+    font-size: 30px;
+    color: red;
+    letter-spacing: 3px;
+}
+#score{
+    position: absolute;
+    top: 15%;
+    right: 40px;
+    font-size: 30px;
+    color: green;
+}
+.instruction{
+    font-size: 20px;
+    color: blue;
+}
+.instruction .red{
+    color: red;
+    line-height: 2;
+    font-size: 25px;
+}
+.life,
+.score{
+    color: green;
 }
 
-body{
-    font-size: 20px;
+body img{
+    margin: 20px 10px;
+    display: block;
+}
+table td{
+    padding: 10px;
 }

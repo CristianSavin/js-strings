@@ -344,17 +344,17 @@
 
 
 
-var incercari = 0;
-do{
-    pin = prompt("Introduceti Pin");
-    incercari++;
-    console.log(incercari);
-}while(pin != "1111" && incercari < 3);
-if(incercari == 3){
-    alert("Card Blocked");
-}else{
-    alert("Welcome");
-}
+//var incercari = 0;
+//do{
+//    pin = prompt("Introduceti Pin");
+//    incercari++;
+//    console.log(incercari);
+//}while(pin != "1111" && incercari < 3);
+//if(incercari == 3){
+//    alert("Card Blocked");
+//}else{
+//    alert("Welcome");
+//}
 
 
 
@@ -614,6 +614,468 @@ if(incercari == 3){
 //        }
 //    }
 //}while(meniu != 0);
+
+
+/* LECTIA NR 5 FOR */
+
+//for (var x = 1 ; x < 10 ; x++){
+//    console.log(x);
+//}
+//
+//var incercari = 0;
+//for(var pin = "" ; pin != "1111" ; incercari++){
+//    pin = prompt(
+//      "Introduceti pinul!"
+//    );
+//    if (pin == "1111"){
+//        alert("Corect");
+//    }
+//    else if(incercari == 2){
+//        alert("Card blocat");
+//        break;
+//    }
+//    else{
+//        alert("Gresit");
+//    }
+//}
+
+
+
+/* ALTERNATIVA LA IF/ELSE */
+
+// ( Conditie ) ? cod_daca_adevar : cod_daca_fals
+
+//var a = prompt(
+//    "Da-mi un numar intreg: ?"
+//);
+//a < 0 ?
+//    alert("Neg")
+//:
+//    a == 0 ?
+//    alert("z")
+//:
+//    alert("poz");
+
+
+/* LECTIA 6 */
+
+
+// VERIFICARE DE PE POZITIA 0
+
+// Y -> porumb
+// x -> bob
+// | -> grau
+// . -> pamint
+
+//var total = 0;
+//var gradina = '....YYYYxxxYYYYxxx....|||||||';
+//var price_porumb = 100;
+//var price_grau = 50;
+//var price_bob = 300;
+//
+//for (var parcela = 0 ; parcela < gradina.length ; parcela++){
+//    console.log(gradina.charAt(parcela));
+//    if(gradina.charAt(parcela) == "Y"){
+//        total+= price_porumb;
+//        console.log(parcela , gradina.charAt(parcela));
+//    }
+//   else if(gradina.charAt(parcela) == "x"){
+//        total+= price_bob;
+//
+//        console.log(parcela , gradina.charAt(parcela));
+//    }
+//    else if(gradina.charAt(parcela) == "|"){
+//        total+= price_grau;
+//        console.log(parcela , gradina.charAt(parcela));
+//    }
+//}
+//alert(`Profit ${total} lei`);
+
+
+
+
+// Verificare de pe ultima pozitie
+//var total = 0;
+//var gradina = '....YYYYxxxYYYYxxx....|||||||';
+//var price_porumb = 100;
+//var price_grau = 50;
+//var price_bob = 300;
+//
+//for (var parcela = gradina.length - 1 ; parcela >= 0 ; parcela--){
+//    if(gradina.charAt(parcela) == "Y"){
+//        total+= price_porumb;
+//        console.log(parcela , gradina.charAt(parcela));
+//    }
+//   else if(gradina.charAt(parcela) == "x"){
+//        total+= price_bob;
+//
+//        console.log(parcela , gradina.charAt(parcela));
+//    }
+//    else if(gradina.charAt(parcela) == "|"){
+//        total+= price_grau;
+//        console.log(parcela , gradina.charAt(parcela));
+//    }
+//}
+//alert(`Profit ${total} lei`);
+
+//
+//var gradina = prompt("Arata gradina \n" +
+//    "x = bob \n" +
+//    "Y = porumb \n" +
+//    "| = grau"
+//);
+//var price_porumb = 100;
+//var price_grau = 50;
+//var price_bob = 300;
+//var total = 0;
+//
+//for(var parcela = 0 ; parcela < gradina.length  ; parcela++){
+//    if(gradina.charAt(parcela) == "Y"){
+//        total+= price_porumb;
+//        console.log(parcela , gradina.charAt(parcela));
+//    }
+//    else if(gradina.charAt(parcela) == "x"){
+//        total+= price_bob;
+//
+//        console.log(parcela , gradina.charAt(parcela));
+//    }
+//    else if(gradina.charAt(parcela) == "|"){
+//        total+= price_grau;
+//        console.log(parcela , gradina.charAt(parcela));
+//    }
+//}
+//alert(`Profit ${total} lei`);
+
+
+/* LECTIA 7 */
+
+//var styles = `body{
+//      colod: red;
+//      }`;
+//var color = 'blue';
+//styles = styles.replace('red' , color);
+//alert(styles);
+
+
+
+//// REGULAR EXPRESSIONS /// RegExp
+
+/// * shabloane / patterne care permit prelucrarea textelor <- limbaj perl
+// var html = `<div class="container first">
+//         ...
+//     </div>`;
+// var new_class = "last";
+// var content = "This is the content";
+// html = html.replace('first' , new_class);
+// html = html.replace('...' , content);
+// console.log(html);
+//
+//
+// /* ARRAY  date tabelare unidimensional , bidimensional , multidimensional
+// 	Colectie de valori ordonate, 0-9....
+// 	["ion"]["Maria"]["???"]
+// 	// 0   ,   1,      2
+// */
+// var orase = ["Chisinau" , "Tiraspol" , "Calarasi" , "Dubasari"];
+
+// index       0    ,         1,          2,            3
+// orase.pop(); Sterge ultimul element
+// orase.push(); Introduce un nou element la sfirsit;
+// orase.unshift(); Introduce un element nou la inceput;
+// orase.shift(); Sterge primul element;
+/* EXEMPLU care transfroma un string in ARRAY
+
+ var orase = "Chisinau Balti Orhei".split();
+ result
+ console.log(result);
+ result in browser
+ "Chisinau" , "Balti" , "Orhei";
+*/
+
+/* 
+	
+	var orase = "Chisinau Balti Orhei".join(|);
+	console.log(orase);
+	result 
+	"Chisinau | Balti | Orhei";
+*/
+
+/* 
+	
+	var orase = ["Chisinau" , "Balti" , "Orhei"]
+	orase.revers
+
+	inverseaza array inversat
+
+	var orase = ["Chisinau" , "Balti" , "Orhei"]
+	orase.slice(1);
+
+	var orase = ["Chisinau" , "Balti" , "Orhei"]
+	orase.slice(1, 2 , "Tiraspol")
+
+	orase = ["Chisinau" , "Balti" , "Orhei"]
+	orase[1] =  "Moscova";
+
+*/
+
+// console.log(orase[1] , orase.length);
+//
+// // ARRAY liniar -> unidimensional
+//
+// var gradina = ["Y" , "Y" , "Y" , "." , "." , "x" , "x" , "x"];
+// var price_bob = 300;
+// var price_grau = 50;
+// var price_porumb = 100;
+// var total = 0;
+//
+// console.log("gradina are" + " " + gradina.length + " " + " metri");
+// for (var i = 0; i < gradina.length ; i++) {
+// 	 if(gradina[i] == "Y"){
+//        total+= price_porumb;
+//    }
+//    else if(gradina[i] == "x"){
+//        total+= price_bob;
+//    }
+//    else if(gradina[i] == "."){
+//        total+= price_grau;
+//    }
+// }
+// console.log(`Profit ${total} lei`);
+//
+//
+// var images = [
+// 	"toamna.jpg" ,
+// 	"iarna.jpg" ,
+// 	"vara.jpg"
+// ];
+//
+// var n = 2;
+// while(n >= 0){
+// 	console.log(images[n]);
+// 	n--;
+// }
+
+
+
+/* LECTIA 7 */
+
+var a = [3, 2, 1];
+var x = 1;
+a [a[x - 1] ++];
+
+console.log(a);
+
+
+
+var persoane = [
+    "Vanea" ,
+    "Irina" ,
+    "Pechia" ,
+    "Doina" ,
+    "Wasea" ,
+    "Maria"
+];
+
+// 1) De schimbat cu locul prima si ultima celula cel putin prin doua metode
+
+
+var temporara = persoane[0];
+persoane[0] = persoane[5];
+persoane[5] = temporara;
+console.log(persoane);
+
+var temporar_two = persoane[0];
+var temporar_three = persoane[5];
+persoane.shift();
+persoane.pop();
+persoane.unshift(temporar_two);
+persoane.push(temporar_three);
+console.log(persoane);
+
+var primul = persoane.shift();
+var doi = persoane.pop();
+persoane.push(doi);
+persoane.unshift(primul);
+console.log(persoane);
+
+
+var trei = persoane.splice(0 , 1);
+var patru = persoane.splice(0 , 5);
+persoane.unshift(trei);
+persoane.push(patru);
+console.log(persoane);
+
+
+/* FUNCTIA ESTE UN BLOCK DE FUNCTII CARE POATE FI ACCESATE */
+/* FUNCTIILE POT PRIMI VALORI , SI FUNCTIILE POT RETURNA VALORI */
+
+// function salut(){
+//     alert("Norok");
+// }
+
+/* FUNCTIILE se folosesc pentru a facilita munca si codul si pentru a nu repeta codul */
+
+/*
+
+    DRY
+    SCOPING
+    SEPARATION of CONCERNS
+
+ */
+
+// function salut(lang){
+//     lang = prompt(`Selecteaza limba:
+//     1). Engleza.
+//     2). Rusa.
+//     3). Romana.
+//     `);
+//         if(lang === "1") {
+//             alert("Hello");
+//         }
+//         else if(lang === "2"){
+//             alert("Privet")
+//         }
+//         else if(lang === "3"){
+//             alert("Zdarova");
+//         }
+// }
+// salut();
+
+/* FUNCTIA CARE NU CONFLICTA CU CUVINTELE REZERVATE IN JS */
+function f(){ ///START ZONA LOCALA
+
+
+    ////// START LOCALE ZONE
+}
+
+// var top = 10;
+// top++;
+// result este undefined;
+
+// top este cuvint rezervat de javascript
+// module - pentru a exclude conflicte    /// de citit despre functii si modeule
+
+
+/* FUNCTIE CARE NU INTERACTIONEAZA CU CUVINTELE REZERVATE DIN JS */
+// (function(){
+//
+// })();
+
+
+/*
+
+    hand
+    ACTOR  (eu)-> ACTION  (prepar)-> SUBJECT (bors)-> RESULT (bors)-> PARAMETER (ingrediente)
+
+
+ */
+
+
+/* OOP */
+
+
+// OBIECTUL ESTE UN CONTAINER CAR ESTE FORMAT DIN * PROPRIETATI si METODE
+
+// var mobil  = {
+//     brand : "Iphone X" ,
+//     color : "Pink",
+//     price: 32000,
+//     diagonala: 5.9,
+//     camera: "50Mp",
+//     used: false ,
+//     interval : [
+//         1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+//     ],
+//     colors : [
+//       "pink" ,
+//       "black",
+//       "white"
+//     ],
+//     battery : {
+//         type : "Li Ion",
+//         amperage: 7800,
+//         voltage: 3.7
+//     },
+//     /* METODE */
+//     call: function(){
+//         alert("piiib .... piiibbbbb");
+//     },
+//     selfie : function(){
+//         my_interval();
+//     }
+// };
+// function my_interval(){
+//     for(var i = 10; i >= 0; i--){
+//         console.log(mobil.interval[i]);
+//         if(mobil.interval[i] >= 1){
+//             alert("cik cik");
+//         }
+//     }
+//
+//
+// console.log(mobil.selfie() , mobil.battery.amperage);
+
+
+
+var home = {
+    name : "Premium King's Penthouse ******",
+    type: "penthouse",
+    area : 500, // M2
+    price : 1000000,  // EURO
+    image: [
+        "https://media-cdn.tripadvisor.com/media/photo-s/09/f0/8c/11/alila-seminyak.jpg" ,
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj78JZZalAgDJG21xlLnY3AeDdpGbwlWXgkxAllLzxcrdrGcvG",
+        "http://www.adelto.co.uk/wp-content/uploads/2012/02/Contemporary-Homes-In-Manchester-10.jpg" ,
+    ],
+    rooms: [
+        {name: "Kitchen" , area : 50},
+        {name: "Bathroom" , area : 100},
+        {name: "Dorm view \"Piata Centrala \" " , area: 40},
+        {name: "Dorm view \" Peretele Cladirii Vecine \" " , area : 40},
+        {name: "Dorm view \" Adaptat pentru catzei \" " , area: 50},
+        {name: "Livingroom" , area : 240}
+    ],
+
+    // METODE / ACTIUNI
+
+    show : function(){
+        document.write("<h1>" + this.name + "</h1>");
+        for(var i = 0 ; i < this.image.length ; i++){
+            document.write("<img width=400 height=200 src=\"" + this.image[i] + "\"  >");
+        }
+    } ,
+    show_rooms : function(){
+        document.write(`<table border="1px">`);
+        for (var n = 0 ; n < home.rooms.length; n++){
+            document.write(`    
+                <tr>
+                    <td>
+                        ${this.rooms[n].name} 
+                    </td>
+                    <td>
+                        ${this.rooms[n].area}
+                    </td>
+                </tr>
+            `)
+        }
+        document.write(`</table>`);
+    }
+};
+home.show();
+home.show_rooms();
+
+
+/* ACASA DE CITIT DESTE XML SI DESPRE JSON
+*  De creat un obiect pentru utilizator de ,nume , parola , avatar , info despre el,
+* */
+
+
+
+
+
+
+
+
 
 
 
