@@ -1070,7 +1070,158 @@ home.show_rooms();
 * */
 
 
+/* lessons 2 OOP  OBIECTE DINAMICE / DINAMICAL OBJECT */
+var person = {
+    name : "Ivan Trzurcan",
+    age: 1
+};
 
+/* MODIFICAM OBIECTUL  -> adaugam proprietati in obiect*/
+person.car = "Tesla XXXXX";
+person.job = "Jsnik";
+
+/* MODIFICAM OBIECTU  -> eliminam proprietati*/
+delete persoane.car;
+console.log(person.name);
+console.log(person.age);
+console.log(persoane.car);
+console.log(person.job);
+
+
+
+/* 1) . Adauga 3 persoane in membri 2). De eliminat seful 3). De adaugat pozitia de capitan cu numele din prompt. */
+// var echipa = {
+//     denumire: "Echipa 2017" ,
+//     membrii: [],
+//     sef: "Mircea Snegur" ,
+//     get_date : function(){
+//         for (var m = 1; m <= 3; m++){
+//             this.membrii.push(prompt("Introduceti numele mumrului:"));
+//         }
+//         delete this.sef;
+//         var capitan = prompt("Introduceti numele capitanului");
+//         this.capitan =  capitan;
+//         document.write(`<table border="1px">
+//                 <tr>
+//                     <td>
+//                         Nume echipa
+//                     </td>
+//                     <td>
+//                         ${this.denumire}
+//                     </td>
+//                 </tr>
+//                 <tr>
+//                     <td>
+//                         Membrii
+//                     </td>
+//                     <td colspan="3">
+//                         ${this.membrii[0]}${this.membrii[1]}${this.membrii[2]}
+//                     </td>
+//                 </tr>
+//                 <tr>
+//                     <td>
+//                         Capitan
+//                     </td>
+//                     <td>
+//                         ${this.capitan}
+//                     </td>
+//                 </tr>
+//             </table>`)
+//     }
+// };
+//
+// echipa.get_date();
+//
+// /* 1). Trebuie sa apara televizor, calculator , pat , fotoliu , masa   , Prin metoda prompt , la fel brad*/
+// var room = {
+//     init_questions : function(){
+//         var tv = prompt("Model televizor");
+//         var pc = prompt("Model calculator");
+//         var pat = prompt("Model pat");
+//         var fotoliu = prompt("Model fotoliu");
+//         var masa = prompt("Model masa");
+//         this.tv = tv;
+//         this.pc = pc;
+//         this.pat = pat;
+//         this.fotliu = fotoliu;
+//         document.write(`<table border="1px">`);
+//         document.write(`
+//             <tr>
+//                 <td>
+//                     TV
+//                 </td>
+//                 <td>
+//                     ${this.tv}
+//                 </td>
+//             </tr>
+//             <tr>
+//                 <td>
+//                     PC
+//                 </td>
+//                 <td>
+//                     ${this.pc}
+//                 </td>
+//             </tr>
+//             <tr>
+//                 <td>
+//                     Pat
+//                 </td>
+//                 <td>
+//                     ${this.pat}
+//                 </td>
+//             </tr>
+//             <tr>
+//                 <td>
+//                     Fotoliu
+//                 </td>
+//                 <td>
+//                     ${this.fotliu}
+//                 </td>
+//             </tr>
+//         `);
+//         document.write(`</table>`)
+//
+//     }
+// };
+// room.init_questions();
+
+
+/* SABLONIZAREA OBIECTELOR */
+// clase (prototipare)
+// Factori
+
+// ECMASCRIPT 6
+// Clasele trebuie sa fie numite cu litera majuscula exemplu (Product)
+
+
+class Product {  // TIP NOU DE DATE
+    constructor(denumire){ // CONSTRUCTOR
+        this.name = denumire;
+        this.price = prompt("Pret");
+    }
+}
+
+
+// CREEAM OBIECTE NOI DE TIP PRODUS
+var p_1 = new Product("Cartofi");
+var p_2 = new Product("Perj");
+var p_3 = new Product("Fasole");
+
+console.log(p_1);
+console.log(p_2);
+console.log(p_3);
+
+/* DE MODELAT CITEVA OBIECTE DIN REALITATE */
+class User {
+    constructor(name){
+        this.name = name;
+    }
+    sayHi(){
+        alert(this.name);
+    }
+}
+var user = new User("Grisa");
+user.sayHi();
 
 
 

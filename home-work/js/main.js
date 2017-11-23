@@ -3,6 +3,7 @@
 let user_data = {
     avatar : "http://wicklownews.net/wp-content/uploads/2015/08/Minion.jpg" ,
     inputs_value : function(){
+
         var el = document.querySelector('form');
         var matches = el.querySelectorAll('input[name]');
         document.write(`<table border="1px">`);
